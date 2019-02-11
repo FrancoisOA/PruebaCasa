@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div class="row"> 
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              
+              <!--utilizamos corchetes para pasar los datos a 
+              los componentes hijos-->
+              
+              <!--componente padre(lista-imagenes) - - componente hijo(imagenes)-->
+              <app-imagen [imagenlista] = "imagen"
+
+              
+              *ngFor="let imagen of imagenlista">
+              <!--El loop "for" o foreach itera y genera la lista para cada imagen
+              Se itera dentro de la raiz "let image" por c/u de la imagenes "of images"
+              que haya para c/u de ellas y luego los renderiza a una sola
+              Sintaxis: let objeto of coleccion_objetos -->
+            </app-imagen> 
+            </div>
+ 	</div>
+</div>
